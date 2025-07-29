@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ninestars Limited</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Ninestars Limited</h1>
+            <p>Reliable Industrial & Technical Services in Ogun State, Nigeria</p>
+            <a href="/contact" class="btn">Contact Us</a>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+            <h2>Who We Are</h2>
+            <p>Ninestars Limited is a trusted name in industrial maintenance, technical support, and engineering consultancy across Ogun State and beyond.</p>
+            <a href="#services" class="btn-outline">Learn More</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="card">
+                    <h3>Technical Support</h3>
+                    <p>Expert solutions for your industrial challenges.</p>
+                </div>
+                <div class="card">
+                    <h3>Maintenance</h3>
+                    <p>Preventive and corrective maintenance services.</p>
+                </div>
+                <div class="card">
+                    <h3>Consulting</h3>
+                    <p>Strategic guidance for optimal operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; {{ year }} Ninestars Limited. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

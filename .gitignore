@@ -1,0 +1,23 @@
+# Ignore Visual Studio files
+.vs/
+*.sln
+*.user
+*.pyproj
+obj/
+*.vsidx
+
+# Ignore Python cache and environment
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+instance/
+
+# Ignore translation builds
+*.mo
+
+# Ignore OS files
+.DS_Store
+Thumbs.db

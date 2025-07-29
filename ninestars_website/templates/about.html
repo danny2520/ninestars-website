@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<!-- Hero Section -->
+<section class="bg-dark text-white py-5">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold">About Us</h1>
+        <p class="lead">Discover who we are, what we stand for, and why we're the trusted choice in industrial services.</p>
+    </div>
+</section>
+
+<!-- About Info Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6">
+                <h2 class="fw-bold mb-3">Who We Are</h2>
+                <p class="text-muted">
+                    <strong>Ninestars Limited</strong> is a proudly Nigerian industrial services and technical support company located in Ode-Remo, Ogun State. With years of industry expertise, we specialize in delivering scalable and affordable solutions for clients in the <strong>manufacturing, production, oil & gas, and energy sectors</strong>. Our team is composed of certified professionals who bring passion, precision, and purpose to every project.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <img src="{{ url_for('static', filename='images/industrial-team.jpg') }}" alt="Our Team" class="img-fluid rounded shadow">
+            </div>
+        </div>
+
+        <!-- Mission and Vision -->
+        <div class="row text-center mb-5">
+            <div class="col-md-6 mb-4">
+                <div class="p-4 bg-light rounded shadow-sm h-100">
+                    <i class="fas fa-bullseye fa-2x text-primary mb-3"></i>
+                    <h4 class="fw-semibold">Our Mission</h4>
+                    <p class="text-muted">
+                        To deliver exceptional industrial and technical solutions that optimize performance, reduce downtime, and drive growth for our clients through innovation, commitment, and reliability.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="p-4 bg-light rounded shadow-sm h-100">
+                    <i class="fas fa-eye fa-2x text-primary mb-3"></i>
+                    <h4 class="fw-semibold">Our Vision</h4>
+                    <p class="text-muted">
+                        To emerge as the leading industrial services provider across West Africa — known for excellence, integrity, and a relentless focus on customer satisfaction.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Why Choose Us -->
+        <div class="text-center mb-4">
+            <h3 class="fw-bold">Why Choose Ninestars Limited?</h3>
+            <p class="text-muted">We deliver more than just services — we deliver results. Here’s what sets us apart:</p>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-3 mb-4">
+                <div class="p-3 border rounded h-100 shadow-sm">
+                    <i class="fas fa-users-cog fa-2x text-success mb-2"></i>
+                    <h5 class="fw-semibold">Expert Team</h5>
+                    <p class="text-muted">Our engineers and technicians are highly trained, experienced, and committed to excellence.</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="p-3 border rounded h-100 shadow-sm">
+                    <i class="fas fa-clock fa-2x text-warning mb-2"></i>
+                    <h5 class="fw-semibold">Timely Delivery</h5>
+                    <p class="text-muted">We adhere to strict timelines without compromising on quality or safety.</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="p-3 border rounded h-100 shadow-sm">
+                    <i class="fas fa-handshake fa-2x text-info mb-2"></i>
+                    <h5 class="fw-semibold">Client Focused</h5>
+                    <p class="text-muted">We build long-term partnerships based on trust, transparency, and mutual success.</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="p-3 border rounded h-100 shadow-sm">
+                    <i class="fas fa-tags fa-2x text-danger mb-2"></i>
+                    <h5 class="fw-semibold">Affordable Solutions</h5>
+                    <p class="text-muted">Our pricing is competitive, ensuring maximum value for your investment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

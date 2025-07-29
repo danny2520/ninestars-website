@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container py-5">
+    <div class="row">
+        <div class="col-lg-7 mb-5">
+            <h2 class="mb-3"><i class="fas fa-envelope-open-text"></i> Contact Us</h2>
+            <p class="mb-4">You can reach Ninestars Limited through the following methods:</p>
+
+            <ul class="list-unstyled">
+                <li class="mb-2"><i class="fas fa-map-marker-alt text-primary me-2"></i><strong>Address:</strong> Opposite AUD Primary School, Ode-Remo, Ogun State, Nigeria</li>
+                <li class="mb-2"><i class="fas fa-envelope text-primary me-2"></i><strong>Email:</strong> <a href="mailto:ninestars.recruitment@yahoo.com">ninestars.recruitment@yahoo.com</a></li>
+                <li><i class="fas fa-phone text-primary me-2"></i><strong>Phone:</strong> +234 915 830 6789 & +234 816 771 1717</li>
+            </ul>
+
+            <h4 class="mt-4"><i class="fas fa-clock text-primary me-2"></i>Business Hours</h4>
+            <p>
+                Monday to Friday: 8:00 AM - 5:00 PM<br>
+                Saturday: 9:00 AM - 2:00 PM<br>
+                Sunday: Closed
+            </p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-5">
+            <h4 class="mb-4"><i class="fas fa-paper-plane text-primary me-2"></i>Send Us a Message</h4>
+
+            {% if success %}
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                {{ success }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            {% endif %}
+
+            <form method="POST" action="{{ url_for('contact') }}">
+                <div class="mb-3">
+                    <label for="name" class="form-label"><i class="fas fa-user me-1"></i> Name:</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Full Name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label"><i class="fas fa-envelope me-1"></i> Email:</label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="you@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label"><i class="fas fa-comment-dots me-1"></i> Message:</label>
+                    <textarea name="message" class="form-control" id="message" rows="6" placeholder="Type your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100"><i class="fas fa-paper-plane me-1"></i> Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Google Map -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="ratio ratio-16x9 rounded shadow-sm">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126938.39471196094!2d3.6238211999999997!3d6.866074349999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a9edbfa3e7bfb%3A0xc2ec1f7ae0cf6e94!2sOde%20Remo%2C%20Ogun%20State!5e0!3m2!1sen!2sng!4v1692539304294!5m2!1sen!2sng"
+                        width="100%" height="350" style="border:0;" allowfullscreen loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/2348167711717" class="btn btn-success rounded-circle position-fixed bottom-0 end-0 m-4 shadow-lg"
+   style="width: 60px; height: 60px; z-index: 1050;" target="_blank" title="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp fs-4 d-flex align-items-center justify-content-center h-100"></i>
+</a>
+
+{% endblock %}
